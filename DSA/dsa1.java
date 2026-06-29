@@ -21,7 +21,6 @@ public class dsa1{
             sum = sum + arr[i];
         }
         System.out.println(sum);
-        
 
         //max of array
         int m = sc.nextInt();
