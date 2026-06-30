@@ -3,6 +3,7 @@
 //in case no value is to be returned, specify the return type as void.
 
 public class day21 {
+    
     public static void main(String[] args){
         square(5);
         greet();
