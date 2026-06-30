@@ -19,7 +19,6 @@ public class dsa3 {
     }
 
     static void rotate90Clockwise(int[][] arr) {
-
         int n = arr.length;
 
         // Step 1: Transpose
