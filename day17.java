@@ -1,4 +1,5 @@
 public class day17 {
+    
     //reversing a string
     public static void main(String[] args){
         String str = "ambitious";
