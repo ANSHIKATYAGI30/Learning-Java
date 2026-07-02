@@ -2,7 +2,6 @@
 //arraylist is an added class.
 //arraylist can grow and shrink.
 //arraylist can hold objects.
-
 //object type must be specified using <> when creating an arraylist.
 //ArrayList<String> list1 = new ArrayList<>()
 //the integer wrapper class was used in place of a primitive data type
