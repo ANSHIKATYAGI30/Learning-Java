@@ -5,18 +5,14 @@ public class dsa5 {
         String st = "WElcoMEtoScaLer";
 
         removeVowels(st);
-
         System.out.println();
-
         reverseVowels(st);
-
         upperCaseToLowerCase(st);
     }
 
     public static void removeVowels(String st){
 
         for(int i=0;i<st.length();i++){
-
             char ch = st.charAt(i);
 
             if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
@@ -65,16 +61,12 @@ public class dsa5 {
         String result = "";
 
         for (int i = 0; i < st.length(); i++) {
-
             char ch = st.charAt(i);
-
             if (ch >= 'A' && ch <= 'Z') {
                 ch = (char)(ch + 32);
             }
-
             result += ch;
         }
-
         System.out.println(result);
     }
 }
