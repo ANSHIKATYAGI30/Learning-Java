@@ -1,4 +1,5 @@
 public class dsa5{
+    
     public static void main(String[] args){
         String st = "welcomeToScaler";
         removeVowels(st);
