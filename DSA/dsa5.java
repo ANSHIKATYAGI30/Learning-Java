@@ -7,6 +7,8 @@ public class dsa5 {
 
         System.out.println();
         reverseVowels(st);
+
+        upperCaseToLowerCase(st);
     }
 
     public static void removeVowels(String st){
@@ -47,5 +49,23 @@ public class dsa5 {
         }
 
         System.out.println(new String(s));
+    }
+
+    
+    public static void upperCaseToLowerCase(String st){
+        String result = "";
+
+        for (int i = 0; i < st.length(); i++) {
+
+            char ch = st.charAt(i);
+
+            if (ch >= 'A' && ch <= 'Z') {
+                ch = (char)(ch + 32);
+            }
+
+            result += ch;
+        }
+
+        System.out.println(result);
     }
 }
