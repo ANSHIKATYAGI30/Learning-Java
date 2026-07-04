@@ -22,12 +22,7 @@ public class dsa5 {
     }
 
     public static boolean isVowel(char ch){
-
-        return ch=='a'||
-               ch=='e'||
-               ch=='i'||
-               ch=='o'||
-               ch=='u';
+        return ch=='a'|| ch=='e'|| ch=='i'|| ch=='o'|| ch=='u';
     }
 
     public static void reverseVowels(String st){
