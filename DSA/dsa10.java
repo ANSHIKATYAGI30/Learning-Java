@@ -1,7 +1,9 @@
 //recursion - func. calls itself to solve a smaller version of same problem
 
 public class dsa10 {
+    
     public static void main(String[] args) {
+        
         System.out.println(sum(5));
         System.out.println(fibonacci(7));
         System.out.println(power(2,5));
