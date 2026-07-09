@@ -4,7 +4,6 @@
 //System.out.println(object) automatically calls object.toString()
 
 class ComplexNumber {
-
     int real;
     int imaginary;
 
