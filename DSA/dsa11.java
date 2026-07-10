@@ -1,5 +1,5 @@
 public class dsa11 {
-
+    
     static class Node{
         int data;
         Node next;
