@@ -114,7 +114,6 @@ public class dsa11 {
             for (int i = 0; i < index - 1; i++) {
                 temp = temp.next;
             }
-
             temp.next = temp.next.next;
             size--;
         }
@@ -158,8 +157,6 @@ public class dsa11 {
             }
             return slow.data;
         }
-
-
     }
 
     public static void main(String[] args){
