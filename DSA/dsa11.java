@@ -13,7 +13,7 @@ public class dsa11 {
     static class LinkedList{
         Node head;
         int size = 0;
-
+        
         //Add beginning
         public void addBeg(int val){
             Node newNode = new Node(val);
