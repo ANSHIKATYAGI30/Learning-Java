@@ -1,5 +1,6 @@
 //singly linked list
 public class dsa14{
+  
   //node structure
   class Node{
     int data;
