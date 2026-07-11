@@ -1,3 +1,4 @@
+//stack-operations
 public class dsa12{
   public static void main(String[] args){
     Stack<Integer> st = new Stack<>();
