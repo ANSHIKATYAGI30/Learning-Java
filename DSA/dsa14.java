@@ -1,6 +1,5 @@
 //singly linked list
 public class dsa14{
-
   //node structure
   class Node{
     int data;
@@ -13,7 +12,6 @@ public class dsa14{
 
   class SLL{
     Node head;
-
     //add first
     void addFirst(int val){
       Node node = new Node(val);
