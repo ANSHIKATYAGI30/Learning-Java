@@ -50,10 +50,7 @@ public class dsa15 {
             node.prev = temp;
         }
 
-        // ==========================
         // Delete First
-        // ==========================
-
         void deleteFirst() {
 
             if (head == null)
@@ -68,10 +65,7 @@ public class dsa15 {
             head.prev = null;
         }
 
-        // ==========================
         // Delete Last
-        // ==========================
-
         void deleteLast() {
 
             if (head == null)
@@ -91,10 +85,7 @@ public class dsa15 {
             temp.prev.next = null;
         }
 
-        // ==========================
         // Reverse DLL
-        // ==========================
-
         void reverse() {
 
             DNode curr = head;
@@ -115,114 +106,67 @@ public class dsa15 {
             }
         }
 
-        // ==========================
         // Print Forward
-        // ==========================
-
         void printForward() {
-
             DNode temp = head;
-
             while (temp != null) {
-
                 System.out.print(temp.data + " <-> ");
-
                 temp = temp.next;
             }
-
             System.out.println("null");
         }
 
-        // ==========================
         // Print Backward
-        // ==========================
-
         void printBackward() {
-
             if (head == null)
                 return;
-
             DNode temp = head;
-
             while (temp.next != null) {
                 temp = temp.next;
             }
-
             while (temp != null) {
-
                 System.out.print(temp.data + " <-> ");
-
                 temp = temp.prev;
             }
-
             System.out.println("null");
         }
-
-        // ==========================
+        
         // Print Alternate Nodes
-        // ==========================
-
         void printAlternate() {
-
             DNode temp = head;
-
             while (temp != null) {
-
                 System.out.print(temp.data + " ");
-
                 if (temp.next != null)
                     temp = temp.next.next;
                 else
                     break;
             }
-
             System.out.println();
         }
 
-        // ==========================
         // Search
-        // ==========================
-
         boolean search(int key) {
-
             DNode temp = head;
-
             while (temp != null) {
-
                 if (temp.data == key)
                     return true;
-
                 temp = temp.next;
             }
-
             return false;
         }
-
-        // ==========================
+        
         // Length
-        // ==========================
-
         int length() {
-
             int count = 0;
-
             DNode temp = head;
-
             while (temp != null) {
                 count++;
                 temp = temp.next;
             }
-
             return count;
         }
     }
-
-    // ==========================
-    // Main Method
-    // ==========================
-
     public static void main(String[] args) {
-
         DLL list = new DLL();
 
         // Add Elements
