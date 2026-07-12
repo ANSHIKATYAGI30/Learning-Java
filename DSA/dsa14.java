@@ -2,7 +2,7 @@
 public class dsa14{
   
   //node structure
-  class Node{
+  static class Node{
     int data;
     Node next;
 
