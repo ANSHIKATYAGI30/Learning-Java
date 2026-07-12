@@ -11,7 +11,7 @@ public class dsa14{
     }
   }
 
-  class SLL{
+  static class SinglyLinkedList{
     Node head;
     //add first
     void addFirst(int val){
@@ -77,7 +77,7 @@ public class dsa14{
     void printAlternate(){
       Node temp = head;
       while(temp != null){
-        System.out.println(temp.data + " ");
+        System.out.print(temp.data + " ");
 
         if(temp.next != null){
           temp = temp.next.next;
