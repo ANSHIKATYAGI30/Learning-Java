@@ -17,11 +17,7 @@ public class dsa15 {
     static class DLL {
 
         DNode head;
-
-        // ==========================
-        // Add First
-        // ==========================
-
+        //add first
         void addFirst(int val) {
 
             DNode node = new DNode(val);
@@ -33,11 +29,8 @@ public class dsa15 {
 
             head = node;
         }
-
-        // ==========================
+        
         // Add Last
-        // ==========================
-
         void addLast(int val) {
 
             DNode node = new DNode(val);
