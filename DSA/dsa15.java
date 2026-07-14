@@ -7,7 +7,6 @@ public class dsa15 {
         int data;
         DNode prev;
         DNode next;
-
         DNode(int data) {
             this.data = data;
         }
@@ -15,92 +14,70 @@ public class dsa15 {
 
     // Doubly Linked List
     static class DLL {
-
         DNode head;
         //add first
         void addFirst(int val) {
-
             DNode node = new DNode(val);
-
             if (head != null) {
                 head.prev = node;
                 node.next = head;
             }
-
             head = node;
         }
         
         // Add Last
         void addLast(int val) {
-
             DNode node = new DNode(val);
-
             if (head == null) {
                 head = node;
                 return;
             }
-
             DNode temp = head;
-
             while (temp.next != null) {
                 temp = temp.next;
             }
-
             temp.next = node;
             node.prev = temp;
         }
 
         // Delete First
         void deleteFirst() {
-
             if (head == null)
                 return;
-
             if (head.next == null) {
                 head = null;
                 return;
             }
-
             head = head.next;
             head.prev = null;
         }
 
         // Delete Last
         void deleteLast() {
-
             if (head == null)
                 return;
-
             if (head.next == null) {
                 head = null;
                 return;
             }
-
             DNode temp = head;
-
             while (temp.next != null) {
                 temp = temp.next;
             }
-
             temp.prev.next = null;
         }
 
         // Reverse DLL
         void reverse() {
-
             DNode curr = head;
             DNode temp = null;
-
             while (curr != null) {
-
                 // Swap next and prev
                 temp = curr.prev;
                 curr.prev = curr.next;
                 curr.next = temp;
-
                 curr = curr.prev;
             }
-
             if (temp != null) {
                 head = temp.prev;
             }
