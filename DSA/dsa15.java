@@ -1,7 +1,6 @@
 // Doubly Linked List
 
 public class dsa15 {
-
     // Node Structure
     static class DNode {
         int data;
