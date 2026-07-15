@@ -72,58 +72,38 @@ public class Stack_Level3 {
         return new StringBuilder(postfix).reverse().toString();
     }
 
-    // ============================================================
+   
     // 3. POSTFIX TO INFIX
-    // ============================================================
-
     static String postfixToInfix(String exp) {
 
         Stack<String> st = new Stack<>();
-
         for (char ch : exp.toCharArray()) {
-
             if (Character.isLetterOrDigit(ch)) {
-
                 st.push(ch + "");
-
             }
 
             else {
-
                 String b = st.pop();
                 String a = st.pop();
-
                 st.push("(" + a + ch + b + ")");
             }
-
         }
-
         return st.peek();
     }
 
-    // ============================================================
+    
     // 4. PREFIX TO INFIX
-    // ============================================================
-
     static String prefixToInfix(String exp) {
 
         Stack<String> st = new Stack<>();
-
         for (int i = exp.length() - 1; i >= 0; i--) {
-
             char ch = exp.charAt(i);
-
             if (Character.isLetterOrDigit(ch)) {
-
                 st.push(ch + "");
-
             }
-
             else {
-
                 String a = st.pop();
                 String b = st.pop();
-
                 st.push("(" + a + ch + b + ")");
             }
 
@@ -132,108 +112,71 @@ public class Stack_Level3 {
         return st.peek();
     }
 
-    // ============================================================
     // 5. EVALUATE POSTFIX
-    // ============================================================
-
     static int evaluatePostfix(String exp) {
 
         Stack<Integer> st = new Stack<>();
-
         for (char ch : exp.toCharArray()) {
-
             if (Character.isDigit(ch)) {
-
                 st.push(ch - '0');
-
             }
-
             else {
-
                 int b = st.pop();
                 int a = st.pop();
-
                 switch (ch) {
-
                     case '+':
                         st.push(a + b);
                         break;
-
                     case '-':
                         st.push(a - b);
                         break;
-
                     case '*':
                         st.push(a * b);
                         break;
-
                     case '/':
                         st.push(a / b);
                         break;
                 }
-
             }
-
         }
-
         return st.peek();
     }
 
-    // ============================================================
+    
     // 6. EVALUATE PREFIX
-    // ============================================================
-
     static int evaluatePrefix(String exp) {
 
         Stack<Integer> st = new Stack<>();
-
         for (int i = exp.length() - 1; i >= 0; i--) {
-
             char ch = exp.charAt(i);
-
             if (Character.isDigit(ch)) {
-
                 st.push(ch - '0');
-
             }
 
             else {
-
                 int a = st.pop();
                 int b = st.pop();
-
                 switch (ch) {
-
                     case '+':
                         st.push(a + b);
                         break;
-
                     case '-':
                         st.push(a - b);
                         break;
-
                     case '*':
                         st.push(a * b);
                         break;
-
                     case '/':
                         st.push(a / b);
                         break;
                 }
-
             }
-
         }
-
         return st.peek();
     }
 
-    // ============================================================
     // MAIN
-    // ============================================================
-
     public static void main(String[] args) {
-
         String infix = "A+B*C";
 
         System.out.println("Infix : " + infix);
