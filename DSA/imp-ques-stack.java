@@ -1,11 +1,8 @@
 import java.util.Stack;
 
 public class Stack_Level1 {
-
-    // =====================================
+    
     // 1. Reverse String
-    // =====================================
-
     public static String reverseString(String s) {
 
         Stack<Character> st = new Stack<>();
