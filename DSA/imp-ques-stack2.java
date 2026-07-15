@@ -90,43 +90,27 @@ public class Stack_Level2 {
         return span;
     }
 
-    // ============================================================
     // 6. DAILY TEMPERATURES
-    // ============================================================
-
     public static int[] dailyTemperatures(int[] temp) {
-
         int n = temp.length;
-
         int[] ans = new int[n];
-
         Stack<Integer> st = new Stack<>();
-
         for (int i = n - 1; i >= 0; i--) {
-
             while (!st.isEmpty() && temp[st.peek()] <= temp[i])
                 st.pop();
-
             if (st.isEmpty())
                 ans[i] = 0;
             else
                 ans[i] = st.peek() - i;
-
             st.push(i);
         }
-
         return ans;
     }
 
-    // ============================================================
     // PRINT ARRAY
-    // ============================================================
-
-    public static void print(int[] arr) {
-
+  public static void print(int[] arr) {
         for (int x : arr)
             System.out.print(x + " ");
-
         System.out.println();
     }
 
