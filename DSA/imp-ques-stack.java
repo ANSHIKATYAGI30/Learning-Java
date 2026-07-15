@@ -51,99 +51,61 @@ public class Stack_Level1 {
         return st.isEmpty();
     }
 
-    // =====================================
     // 4. Remove Adjacent Duplicates
-    // =====================================
-
     public static String removeDuplicates(String s) {
-
         Stack<Character> st = new Stack<>();
-
         for(char ch : s.toCharArray()) {
-
             if(!st.isEmpty() && st.peek() == ch) {
-
                 st.pop();
-
             } else {
-
                 st.push(ch);
             }
         }
-
         StringBuilder ans = new StringBuilder();
-
         while(!st.isEmpty()) {
             ans.append(st.pop());
         }
-
         return ans.reverse().toString();
     }
-
-    // =====================================
+    
     // 5. Stack Using Linked List
-    // =====================================
-
     static class Node {
-
         int data;
         Node next;
-
         Node(int data) {
             this.data = data;
         }
     }
-
     static class StackLL {
-
         Node top;
-
         void push(int val) {
-
             Node node = new Node(val);
-
             node.next = top;
-
             top = node;
         }
-
         int pop() {
-
             if(top == null) {
                 System.out.println("Stack Underflow");
                 return -1;
             }
-
             int val = top.data;
-
             top = top.next;
-
             return val;
         }
-
         int peek() {
-
             if(top == null)
                 return -1;
-
             return top.data;
         }
-
         boolean isEmpty() {
             return top == null;
         }
-
         void display() {
-
             Node temp = top;
-
             while(temp != null) {
-
                 System.out.print(temp.data + " ");
-
                 temp = temp.next;
             }
-
             System.out.println();
         }
     }
