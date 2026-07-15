@@ -4,81 +4,50 @@ public class Stack_Level1 {
     
     // 1. Reverse String
     public static String reverseString(String s) {
-
         Stack<Character> st = new Stack<>();
-
         for(char ch : s.toCharArray()) {
             st.push(ch);
         }
-
         StringBuilder ans = new StringBuilder();
-
         while(!st.isEmpty()) {
             ans.append(st.pop());
         }
-
         return ans.toString();
     }
 
-    // =====================================
     // 2. Reverse Words
-    // =====================================
-
     public static String reverseWords(String s) {
-
         Stack<String> st = new Stack<>();
-
         String[] words = s.split(" ");
-
         for(String word : words) {
             st.push(word);
         }
-
         StringBuilder ans = new StringBuilder();
-
         while(!st.isEmpty()) {
-
             ans.append(st.pop());
-
             if(!st.isEmpty())
                 ans.append(" ");
         }
-
         return ans.toString();
     }
 
-    // =====================================
     // 3. Valid Parentheses
-    // =====================================
-
     public static boolean validParentheses(String s) {
-
         Stack<Character> st = new Stack<>();
-
         for(char ch : s.toCharArray()) {
-
             if(ch == '(' || ch == '[' || ch == '{') {
-
                 st.push(ch);
-
             } else {
-
-                if(st.isEmpty())
-                    return false;
-
+                if(st.isEmpty()){return false;}
                 char top = st.pop();
-
                 if(ch == ')' && top != '(')
                     return false;
-
                 if(ch == ']' && top != '[')
                     return false;
-
                 if(ch == '}' && top != '{')
                     return false;
             }
         }
-
         return st.isEmpty();
     }
 
