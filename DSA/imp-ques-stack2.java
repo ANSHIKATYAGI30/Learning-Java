@@ -113,11 +113,8 @@ public class Stack_Level2 {
             System.out.print(x + " ");
         System.out.println();
     }
-
-    // ============================================================
+  
     // MAIN
-    // ============================================================
-
     public static void main(String[] args) {
 
         int arr[] = {4, 5, 2, 25};
