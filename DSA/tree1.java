@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class dsa16 {
-
+    
     // Node Class
     static class Node {
         int data;
