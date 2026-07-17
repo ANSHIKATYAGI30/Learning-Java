@@ -46,5 +46,33 @@ public class tree2{
   }
 
   //identical trees
-  
+  static boolean identical(Node a, Node b){
+    if(a == null && b == null){
+      return true;
+    }
+    if (a == null || b == null){
+      return false;
+    }
+    return a.data == b.data && identical(a.left, b.left) && identical(a.right, b.right);
+  }
+
+  //diameter
+  static int diameter = 0;
+
+  static int height(Node root) {
+        if (root == null)
+            return 0;
+
+        int left = height(root.left);
+        int right = height(root.right);
+
+        diameter = Math.max(diameter, left + right);
+        return 1 + Math.max(left, right);
+    }
+
+   static int diameter(Node root) {
+        diameter = 0;
+        height(root);
+        return diameter;
+    }
 }
