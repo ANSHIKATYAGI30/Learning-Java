@@ -41,4 +41,21 @@ public class binaryTree{
 
         return search(root.right, key);
     }
+  
+    // FIND MIN
+    static int minimum(Node root) {
 
+        while (root.left != null)
+            root = root.left;
+
+        return root.data;
+    }
+  
+    // FIND MAX
+    static int maximum(Node root) {
+
+        while (root.right != null)
+            root = root.right;
+
+        return root.data;
+    }
