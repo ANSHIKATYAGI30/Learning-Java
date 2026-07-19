@@ -91,14 +91,11 @@ public class binaryTree{
 
     // INORDER
     static void inorder(Node root) {
-
         if (root == null)
             return;
 
         inorder(root.left);
-
         System.out.print(root.data + " ");
-
         inorder(root.right);
     }
 
@@ -110,4 +107,14 @@ public class binaryTree{
         System.out.print(root.data + " ");
         preorder(root.left);
         preorder(root.right);
+    }
+
+    // POSTORDER
+    static void postorder(Node root) {
+        if (root == null)
+            return;
+
+        postorder(root.left);
+        postorder(root.right);
+        System.out.print(root.data + " ");
     }
