@@ -115,19 +115,13 @@ public class binaryTree {
         preorder(root.right);
     }
 
-    // =====================================================
     // POSTORDER
-    // =====================================================
-
     static void postorder(Node root) {
-
         if (root == null)
             return;
 
         postorder(root.left);
-
         postorder(root.right);
-
         System.out.print(root.data + " ");
     }
 
@@ -160,7 +154,6 @@ public class binaryTree {
     // =====================================================
 
     static boolean isBST(Node root) {
-
         return check(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
 
@@ -183,7 +176,6 @@ public class binaryTree {
     static int count = 0;
 
     static int kthSmallest(Node root, int k) {
-
         if (root == null)
             return -1;
 
@@ -205,7 +197,6 @@ public class binaryTree {
     // =====================================================
 
     static int kthLargest(Node root, int k) {
-
         if (root == null)
             return -1;
 
@@ -227,7 +218,6 @@ public class binaryTree {
     // =====================================================
 
     static Node LCA(Node root, int a, int b) {
-
         while (root != null) {
 
             if (a < root.data && b < root.data)
@@ -248,11 +238,9 @@ public class binaryTree {
     // =====================================================
 
     static Integer floor(Node root, int key) {
-
         Integer ans = null;
 
         while (root != null) {
-
             if (root.data == key)
                 return key;
 
@@ -260,13 +248,10 @@ public class binaryTree {
                 root = root.left;
 
             else {
-
                 ans = root.data;
-
                 root = root.right;
             }
         }
-
         return ans;
     }
 
@@ -275,11 +260,8 @@ public class binaryTree {
     // =====================================================
 
     static Integer ceil(Node root, int key) {
-
         Integer ans = null;
-
         while (root != null) {
-
             if (root.data == key)
                 return key;
 
@@ -287,13 +269,10 @@ public class binaryTree {
                 root = root.right;
 
             else {
-
                 ans = root.data;
-
                 root = root.left;
             }
         }
-
         return ans;
     }
 
@@ -302,23 +281,15 @@ public class binaryTree {
     // =====================================================
 
     static Integer successor(Node root, int key) {
-
         Integer ans = null;
-
         while (root != null) {
-
             if (key < root.data) {
-
                 ans = root.data;
-
                 root = root.left;
-
             } else {
-
                 root = root.right;
             }
         }
-
         return ans;
     }
 
@@ -327,23 +298,15 @@ public class binaryTree {
     // =====================================================
 
     static Integer predecessor(Node root, int key) {
-
         Integer ans = null;
-
         while (root != null) {
-
             if (key > root.data) {
-
                 ans = root.data;
-
                 root = root.right;
-
             } else {
-
                 root = root.left;
             }
         }
-
         return ans;
     }
 
@@ -352,7 +315,6 @@ public class binaryTree {
     // =====================================================
 
     public static void main(String[] args) {
-
         Node root = null;
 
         int[] arr = {50,30,70,20,40,60,80};
