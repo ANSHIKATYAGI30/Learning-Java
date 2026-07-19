@@ -59,3 +59,34 @@ public class binaryTree{
 
         return root.data;
     }
+
+    // DELETE NODE
+    static Node delete(Node root, int key) {
+        if (root == null)
+            return null;
+
+        if (key < root.data)
+            root.left = delete(root.left, key);
+
+        else if (key > root.data)
+            root.right = delete(root.right, key);
+
+        else {
+            // No child
+            if (root.left == null && root.right == null)
+                return null;
+
+            // One child
+            if (root.left == null)
+                return root.right;
+
+            if (root.right == null)
+                return root.left;
+
+            // Two children
+            int min = minimum(root.right);
+            root.data = min;
+            root.right = delete(root.right, min);
+        }
+        return root;
+    }
