@@ -13,22 +13,19 @@ public class binaryTree {
 
     // INSERT
     static Node insert(Node root, int val) {
-
         if (root == null)
             return new Node(val);
 
         if (val < root.data)
             root.left = insert(root.left, val);
 
-        else
-            root.right = insert(root.right, val);
+        else { root.right = insert(root.right, val); }
 
         return root;
     }
 
     // SEARCH
     static boolean search(Node root, int key) {
-
         if (root == null)
             return false;
 
@@ -44,7 +41,6 @@ public class binaryTree {
 
     // FIND MIN
     static int minimum(Node root) {
-
         while (root.left != null)
             root = root.left;
 
@@ -53,7 +49,6 @@ public class binaryTree {
 
     // FIND MAX
     static int maximum(Node root) {
-
         while (root.right != null)
             root = root.right;
 
@@ -62,7 +57,6 @@ public class binaryTree {
 
     // DELETE NODE
     static Node delete(Node root, int key) {
-
         if (root == null)
             return null;
 
@@ -123,12 +117,8 @@ public class binaryTree {
         System.out.print(root.data + " ");
     }
 
-    // =====================================================
     // LEVEL ORDER
-    // =====================================================
-
     static void levelOrder(Node root) {
-
         Queue<Node> q = new LinkedList<>();
 
         q.offer(root);
@@ -147,10 +137,7 @@ public class binaryTree {
         }
     }
 
-    // =====================================================
     // VALID BST
-    // =====================================================
-
     static boolean isBST(Node root) {
         return check(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
@@ -167,10 +154,7 @@ public class binaryTree {
                 check(root.right, root.data, max);
     }
 
-    // =====================================================
     // KTH SMALLEST
-    // =====================================================
-
     static int count = 0;
 
     static int kthSmallest(Node root, int k) {
@@ -190,10 +174,8 @@ public class binaryTree {
         return kthSmallest(root.right, k);
     }
 
-    // =====================================================
+  
     // KTH LARGEST
-    // =====================================================
-
     static int kthLargest(Node root, int k) {
         if (root == null)
             return -1;
@@ -211,10 +193,7 @@ public class binaryTree {
         return kthLargest(root.left, k);
     }
 
-    // =====================================================
     // LCA
-    // =====================================================
-
     static Node LCA(Node root, int a, int b) {
         while (root != null) {
 
@@ -231,10 +210,7 @@ public class binaryTree {
         return null;
     }
 
-    // =====================================================
     // FLOOR
-    // =====================================================
-
     static Integer floor(Node root, int key) {
         Integer ans = null;
 
@@ -253,10 +229,7 @@ public class binaryTree {
         return ans;
     }
 
-    // =====================================================
     // CEIL
-    // =====================================================
-
     static Integer ceil(Node root, int key) {
         Integer ans = null;
         while (root != null) {
@@ -274,10 +247,7 @@ public class binaryTree {
         return ans;
     }
 
-    // =====================================================
     // SUCCESSOR
-    // =====================================================
-
     static Integer successor(Node root, int key) {
         Integer ans = null;
         while (root != null) {
@@ -291,10 +261,7 @@ public class binaryTree {
         return ans;
     }
 
-    // =====================================================
     // PREDECESSOR
-    // =====================================================
-
     static Integer predecessor(Node root, int key) {
         Integer ans = null;
         while (root != null) {
@@ -308,10 +275,7 @@ public class binaryTree {
         return ans;
     }
 
-    // =====================================================
     // MAIN
-    // =====================================================
-
     public static void main(String[] args) {
         Node root = null;
 
