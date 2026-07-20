@@ -1,10 +1,8 @@
 import java.util.*;
 
 public class binaryTree {
-  
     // Node
     static class Node {
-
         int data;
         Node left, right;
 
