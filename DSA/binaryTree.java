@@ -36,7 +36,6 @@ public class binaryTree {
         return search(root.right, key);
     }
 
-
     // FIND MIN
     static int minimum(Node root) {
         while (root.left != null)
