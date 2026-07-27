@@ -18,9 +18,7 @@ public class binaryTree {
 
         if (val < root.data)
             root.left = insert(root.left, val);
-
         else { root.right = insert(root.right, val); }
-
         return root;
     }
 
