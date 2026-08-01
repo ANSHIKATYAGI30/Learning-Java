@@ -1,5 +1,4 @@
 class Box {
-
     double length;
     double width;
     double height;
@@ -37,7 +36,6 @@ class Box {
     }
 
     void display() {
-
         System.out.println("Length : " + length);
         System.out.println("Width  : " + width);
         System.out.println("Height : " + height);
@@ -51,23 +49,15 @@ class Box {
 }
 
 public class inheritance3 {
-
     public static void main(String[] args) {
-
         Box b1 = new Box();
-
         Box b2 = new Box(5);
-
         Box b3 = new Box(5,4);
-
         Box b4 = new Box(5,4,3);
 
         b1.display();
-
         b2.display();
-
         b3.display();
-
         b4.display();
     }
 }
