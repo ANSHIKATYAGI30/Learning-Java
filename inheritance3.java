@@ -2,7 +2,7 @@ class Box {
     double length;
     double width;
     double height;
-
+    
     // Default Constructor
     Box() {
         length = width = height = 1;
