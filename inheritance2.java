@@ -1,15 +1,11 @@
 class Bank {
-
     String bankName;
-
     Bank(String name) {
         bankName = name;
     }
-
     void interestRate() {
         System.out.println("Interest Rate not specified");
     }
-
     void display() {
         System.out.println("Bank : " + bankName);
     }
@@ -17,11 +13,9 @@ class Bank {
 
 // SBI
 class SBI extends Bank {
-
     SBI() {
         super("SBI");
     }
-
     @Override
     void interestRate() {
         System.out.println("Interest Rate : 6.5%");
