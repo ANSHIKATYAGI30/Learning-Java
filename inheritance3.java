@@ -39,11 +39,8 @@ class Box {
         System.out.println("Length : " + length);
         System.out.println("Width  : " + width);
         System.out.println("Height : " + height);
-
         System.out.println("Volume : " + volume());
-
         System.out.println("Surface Area : " + surfaceArea());
-
         System.out.println("----------------------");
     }
 }
