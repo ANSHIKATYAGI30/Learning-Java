@@ -1,7 +1,6 @@
 import java.util.Stack;
 
 public class Stack_Level3 {
-
     // Operator Precedence
     static int precedence(char ch) {
         switch (ch) {
