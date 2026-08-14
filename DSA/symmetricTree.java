@@ -4,7 +4,6 @@ class Solution {
     }
 
     boolean mirror(TreeNode left, TreeNode right) {
-
         // Both are empty
         if (left == null && right == null)
             return true;
