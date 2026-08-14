@@ -125,12 +125,15 @@ public class Stack_Level3 {
                     case '+':
                         st.push(a + b);
                         break;
+                        
                     case '-':
                         st.push(a - b);
                         break;
+                        
                     case '*':
                         st.push(a * b);
                         break;
+                        
                     case '/':
                         st.push(a / b);
                         break;
@@ -158,12 +161,15 @@ public class Stack_Level3 {
                     case '+':
                         st.push(a + b);
                         break;
+                        
                     case '-':
                         st.push(a - b);
                         break;
+                        
                     case '*':
                         st.push(a * b);
                         break;
+                        
                     case '/':
                         st.push(a / b);
                         break;
