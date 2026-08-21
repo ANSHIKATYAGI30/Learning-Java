@@ -5,8 +5,8 @@ class Father{
 	void displayFData() {
 		System.out.println("fdata="+fdata);
 	}
-	
 }
+
 class Child extends Father{
 	int cdata=20;
 	Child(){
@@ -14,10 +14,9 @@ class Child extends Father{
 		System.out.println("In Child class");}
 	void displayCData() {
 		System.out.println("cdata="+cdata);
-		
 	}
-	
 }
+
 class GrandChild extends Child{
 	int gcdata=30;
 	GrandChild(){
