@@ -26,18 +26,14 @@ class GrandChild extends Child{
 		System.out.println("gcdata="+gcdata);
 		displayCData();
 		displayFData();
-		
 	}
 }
-public class inheritance3 {
 
+public class inheritance3 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		GrandChild ob1=new GrandChild();
 		GrandChild ob2=new GrandChild();
-		ob1.displayGCData();
-		
+		ob1.displayGCData();	
 	}
-
 }
 //super()
