@@ -2,15 +2,14 @@ class Father{
 	int fdata=10;
 	void dislayFData() {
 		System.out.println("fdata="+fdata);
-	}
-	
+	}	
 }
+
 class Child extends Father{
 	int cdata=20;
 	void displayCData() {
 		System.out.println("cdata="+cdata);
 	}
-	
 }
 class GrandChild extends Child{
 	int gcdata=30;
