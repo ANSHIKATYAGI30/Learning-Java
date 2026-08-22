@@ -44,9 +44,8 @@ public class inheritance4 {
 		GrandChild ob2=new GrandChild();
 		ob1.displayGCData();
 		ob1.displayX();
-		
 	}
-
 }
+
 //this()    this.x
 //super()   super.x
