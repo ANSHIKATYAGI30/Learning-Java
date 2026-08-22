@@ -23,7 +23,7 @@ class GrandChild extends Child{
 	int gcdata=30;
 	int X=200;
 	GrandChild(){
-		super();//will be written by compiler if not written in code
+		super(); //will be written by compiler if not written in code
 		System.out.println("In GrandChild");}
 	void displayGCData() {
 		System.out.println("gcdata="+gcdata);
